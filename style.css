@@ -1,0 +1,129 @@
+:root{
+    --primary-color:#f03e3e;
+    --secondary-color:#fa5252;
+    --common-padding:16px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+}
+.header{
+    background-color: black;
+    padding: 18px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav h3{
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+}
+.nav h3 span{
+    color: var(--secondary-color);
+}
+.nav_links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav_links a{
+    color: #fff;
+    text-decoration: none;
+    font: size 20px;
+   /* text-transform: uppercase;*/
+}
+/* main part */
+/* home */
+.home{
+    height: 90vh;
+    background-image: url(image/pngfind.com-wedding-background-images-hd-1473735.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-contents{
+    text-align: center;
+}
+.home-contents h3,
+.home-contents h2{
+    line-height: 1.4;
+}
+.small-heading{
+    font-size: 32px;
+}
+.small-heading span{
+    color:var(--primary-color);
+}
+.large-heading{
+    font-size: 48px;
+}
+.large-heading span{
+    color: var(--primary-color);
+}
+.btn{
+    padding: 8px;
+    background-color: var(--primary-color);
+    color: #f7f9fb;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 12px;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
+.About{
+    text-align: center;
+    padding: 32px;
+}
+.About h1,
+h3{
+    margin-bottom: 16px;
+}
+.large-heading span{
+    color: var(--primary-color);
+}
+.About img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+    object-fit: cover;
+}
+.About p{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 10px;
+}
+.project{
+    padding: var(--common-padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+.project-area img{
+    width: 100px;
+}
+.project-area{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media screen and (max-width: 740px){
+    .nav{
+        flex-direction: columns;
+    }
+    .large-heading{
+        font-size: 30px;
+    } 
+}
